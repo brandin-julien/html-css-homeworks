@@ -1,0 +1,83 @@
+.first {
+  background: red;
+  height: 500px;
+  width: 500px;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 10px; }
+
+.second {
+  background: red;
+  height: 500px;
+  width: 500px;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 10px;
+  color: white; }
+
+.three {
+  background: red;
+  height: 500px;
+  width: 500px;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 10px;
+  position: relative; }
+
+.greenBlock {
+  background: green;
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  top: 0;
+  right: 0; }
+
+.greyBlock {
+  background: grey;
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  top: 80%;
+  right: 80%; }
+
+.fourth {
+  background: red;
+  height: 500px;
+  width: 500px;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 10px;
+  position: relative; }
+
+.whiteBlock {
+  background: white;
+  height: 150px;
+  width: 100px;
+  position: absolute;
+  top: 0;
+  right: 80%;
+  display: table; }
+
+.whiteBlock span {
+  display: table-cell;
+  vertical-align: middle; }
+
+.blackBlock {
+  background: black;
+  height: 150px;
+  width: 100px;
+  position: absolute;
+  top: 70%;
+  right: 0;
+  color: white;
+  display: table; }
+
+.blackBlock span {
+  display: table-cell;
+  vertical-align: middle; }
+
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,82 @@
+$background-color: red;
+$width-block: 500px;
+$height-block: 500px;
+$font-size: 10px;
+$text-color: white;
+
+@mixin createBlock($height, $width, $background){
+  background: $background;
+  height: $height;
+  width: $width;
+}
+
+@mixin centerText{
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  font-size: $font-size;
+}
+
+@mixin positionBlock($top, $right){
+  position: absolute;
+  top: $top;
+  right: $right;
+}
+
+.first{
+  @include createBlock($height-block, $width-block, $background-color);
+  @include centerText();
+    //display: inline-block;
+    //transform: translateY(200px);
+}
+
+.second{
+  @include createBlock($height-block, $width-block, $background-color);
+  @include centerText();
+  color: $text-color;
+}
+
+.three{
+  @include createBlock($height-block, $width-block, $background-color);
+  @include centerText();
+  position: relative;
+}
+
+.greenBlock{
+  @include createBlock(100px, 100px, green);
+  @include positionBlock(0, 0);
+}
+
+.greyBlock{
+  @include createBlock(100px, 100px, grey);
+  @include positionBlock(80%, 80%);
+}
+
+.fourth{
+  @include createBlock($height-block, $width-block, $background-color);
+  @include centerText();
+  position: relative;
+}
+
+.whiteBlock{
+  @include createBlock(150px, 100px, white);
+  @include positionBlock(0, 80%);
+  display: table;
+}
+
+.whiteBlock span{
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.blackBlock{
+  @include createBlock(150px, 100px, black);
+  @include positionBlock(70%, 0);
+  color: $text-color;
+  display: table;
+}
+
+.blackBlock span{
+  display: table-cell;
+  vertical-align: middle;
+}
