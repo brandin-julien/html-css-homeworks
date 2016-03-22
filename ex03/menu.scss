@@ -1,5 +1,13 @@
+$submitColor1: #f17a36;
+$submitColor2: #ef495f;
+$backgroundColor: black;
+$liBackground: white;
+$hoverBackground: #cccccc;
+$hoverColor: white;
+$liColor: black;
+
 body{
-  background: black;
+  background: $backgroundColor;
 }
 
 .menu{
@@ -19,15 +27,15 @@ body{
   li{
     display: table-cell;
     position: relative;
-    background: white;
-    color: black;
+    background: $liBackground;
+    color: $liColor;
   }
 
   a{
     text-decoration: none;
     display: block;
     padding: 8px 32px;
-    color: black;
+    color: $liColor;
   }
 
   ul a{
@@ -43,8 +51,8 @@ body{
   }
 
   li:hover a:hover{
-    background: #cccccc;
-    color: white;
+    background: $hoverBackground;
+    color: $hoverColor;
     transition: background 2s, color 2s, transform 2s;
   }
 }
