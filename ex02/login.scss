@@ -1,0 +1,81 @@
+$submitColor1: #f17a36;
+$submitColor2: #ef495f;
+$backgroundColor: #eeeeee;
+$labelColor: #6b787b;
+$loginBorderColor: #c8eafb;
+$inputBorderColor: #e7e7e7;
+$h1Size: 300%;
+$labelSize: 105%;
+
+@mixin definePadding($top, $left, $bottom, $right){
+  padding: $top $left $bottom $right;
+}
+
+@mixin defineBorder($border){
+  border: $border;
+}
+
+@mixin definePosition($top, $left){
+  position: absolute;
+  top: $top;
+  left: $left;
+}
+
+@mixin defineText($size, $weight, $color){
+  font-size: $size;
+  font-weight: $weight;
+  color: $color;
+}
+
+.title {
+  @include defineText($h1Size, normal, black);
+}
+
+.popUp {
+  height: 100px;
+  width: 20%;
+  background: $backgroundColor;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  @include definePosition(5%, 40%);
+  visibility: hidden;
+}
+
+.label {
+  @include defineText($labelSize, bold, $labelColor);
+}
+
+.loginBlock {
+  @include defineBorder(1px solid $loginBorderColor);
+  @include definePadding(20px,50px, 50px, 30px);
+  @include definePosition(50%, 50%);
+  transform: translate(-50%, -50%);
+}
+
+.title, .paragraphe {
+  text-align: center;
+}
+
+.link{
+  text-decoration: none;
+}
+
+.loginBlock form {
+  margin: 25px 0;
+}
+
+#email, #password {
+  @include defineBorder(1px solid $inputBorderColor);
+  border-radius: 2px;
+}
+
+input[type=submit] {
+  @include definePadding(10px, 55px, 10px, 55px);
+  @include defineBorder(0);
+  border-radius: 10px;
+  background: linear-gradient(to right, $submitColor1, $submitColor2);
+  color: white;
+  outline: none;
+}
+
