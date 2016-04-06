@@ -1,0 +1,73 @@
+.loader {
+    stroke-dasharray: 1000;
+    animation: load 2s ;
+}
+@keyframes load {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+text {
+    animation: fadeInLeft 4s, changeColor 10s linear infinite;
+}
+
+.man {
+    width: 75px;
+    height: auto;
+    margin-left: -250px;
+    animation: infinite-rotate 10s infinite;
+    margin-bottom: 45px;
+}
+
+.sun {
+    stroke-dasharray: 2.5;
+    stroke-dashoffset: 500;
+    animation: dash 10s infinite , changeColor 10s linear infinite;
+}
+
+@keyframes dash {
+    from {
+        stroke: "yellow";
+    }
+    to {
+        stroke-dashoffset: 0;
+        stroke: "orange";
+    }
+
+}
+
+@keyframes changeColor {
+    0% {
+        fill: #f1c40f;
+        stroke: #f1c40f;
+    }
+    50% {
+        fill: #e67e22;
+        stroke: #e67e22;
+    }
+    100% {
+        fill: #f1c40f;
+        stroke: #f1c40f;
+    }
+}
+
+@keyframes infinite-rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
