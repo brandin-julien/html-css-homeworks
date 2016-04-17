@@ -1,0 +1,284 @@
+/*
+
+FONT
+
+*/
+
+@font-face {
+    font-family: "FoundersGrotesk";
+    src: url('../fonts/FoundersGrotesk-Regular.ttf');
+}
+
+@font-face {
+    font-family: "StanleyPoster";
+    src: url('../fonts/Stanley-Poster.ttf');
+}
+
+@font-face {
+    font-family: "EngraversGothic";
+    src: url('../fonts/EngraversGothicBT-Regular.ttf');
+}
+
+@font-face {
+    font-family: "Aileron-Regular";
+    src: url('../fonts/Aileron-Regular.otf');
+}
+
+@font-face {
+    font-family: "Aileron-Italic";
+    src: url('../fonts/Aileron-Italic.otf');
+    font-style: italic;
+}
+
+/*
+
+HEADER
+
+*/
+
+a{
+    color: black;
+}
+
+.shoppingSearch{
+    margin-left: 1450px;
+}
+
+.shoppingSearch li{
+    display: inline;
+}
+
+.loginRegister {
+    position: absolute;
+    left: 20%;
+    margin-top: 1%;
+}
+
+.loginRegister li {
+    display: inline-block;
+}
+
+.login {
+    border-right: 1px dashed #e5e5e5;
+    width: 45px;
+}
+
+.search{
+    margin-left: 5px;
+}
+
+/*
+
+MENU
+
+*/
+
+.menu {
+    position: relative;
+    margin-top: 15.8%;
+    text-align: center;
+    width: 100%;
+    font-family: FoundersGrotesk, sans-serif;
+    font-size: 14px;
+    padding: 25px 0;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    color: #000000;
+    margin-bottom: 24px;
+}
+
+.menu li {
+    display: inline-block;
+    padding: 0 25px;
+    height: 10px;
+    cursor: pointer;
+}
+
+.menu li:not(.blog) {
+    border-right: 1px dashed #bbbbbb;
+}
+
+.arrow {
+    left: 8px;
+    position: relative;
+}
+
+/*
+
+MODE
+
+*/
+
+.home{
+    text-align: center;
+    font-family: StanleyPoster, sans-serif;
+}
+
+.mode{
+    width: 1265px;
+    height: 630px;
+    background: url("../img/image1.png") no-repeat;
+    display: table;
+    margin-bottom: 25px;
+    margin-left: 320px;
+}
+
+.mode_text{
+    display:table-cell;
+    vertical-align: middle;
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.food{
+    width: 405px;
+    height: 490px;
+    background: url("../img/food.png") no-repeat;
+    display: table;
+    margin-right: 20px;
+}
+
+.food_text{
+    display:table-cell;
+    vertical-align: middle;
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+
+.social{
+    font-family: Aileron-Regular, sans-serif;
+}
+
+.newsletter{
+    width: 410px;
+    height: 215px;
+    background: url("../img/Newsletter-tuile.png") no-repeat;
+    display: table;
+    margin-right: 20px;
+    margin-bottom: 25px;
+}
+
+.newsletter_text{
+    display:table-cell;
+    vertical-align: middle;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+
+.network{
+    width: 410px;
+    height: 250px;
+    background: #575757;
+    display: table;
+    margin-right: 20px;
+}
+
+.network_text{
+    display:table-cell;
+    vertical-align: middle;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+
+.art{
+    width: 405px;
+    height: 490px;
+    background: url("../img/art.png") no-repeat;
+    display: table;
+}
+
+.art_text{
+    display:table-cell;
+    vertical-align: middle;
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.content-food, .social, .content-art{
+    display: inline-block;
+}
+
+i{
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+.image a{
+    color: #a9c7bf;
+}
+
+input[type="email"]{
+    width: 250px;
+    height: 35px;
+}
+
+input[type="submit"]{
+    background: #a9c7bf;
+    color: white;
+    width: 110px;
+    height: 40px;
+}
+
+.social input[type="submit"], .social input[type="email"]{
+    border: none;
+
+}
+
+/*
+
+FOOTER
+
+*/
+
+footer{
+    display: table;
+    margin: 0 auto;
+    margin-top:20px;
+    border-top: 1px solid #e5e5e5;
+}
+
+.image-footer a{
+    color: black;
+}
+
+.copy{
+    text-align: center;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.infos{
+    margin: 0 21px;
+}
+
+.archive li:nth-of-type(1),.infos li:nth-of-type(1),.follow li:nth-of-type(1){
+    font-weight: bold;
+    font-family: StanleyPoster, sans-serif;
+}
+
+.archive li,.infos li,.follow li{
+    margin-top: 5px;
+}
+
+.archive,.infos,.follow{
+    display: inline-block;
+    text-align: center;
+    width: 406px;
+    height:100%;
+    float:left;
+    font-family: FoundersGrotesk, sans-serif;
+}
+
+
+
+
+
+
